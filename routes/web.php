@@ -10,6 +10,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\SalesController;
+use App\Http\Controllers\LevelController;
 
 // =============================================
 // PRAKTIKUM 1 - Basic Routing
@@ -101,3 +102,5 @@ Route::get('/user/{id}/name/{name}', [UserController::class, 'profile']);
 
 // 4. Halaman Penjualan
 Route::get('/sales', [SalesController::class, 'index']);
+
+route::get('/level', [LevelController::class, 'index']);
