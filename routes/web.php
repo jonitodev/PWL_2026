@@ -33,6 +33,8 @@ Route::get('/about', function () {
 // PRAKTIKUM 1 - Route Parameters
 // =============================================
 
+Route::get('/user', [UserController::class, 'index']);
+
 Route::get('/user/{name?}', function ($name='John') {
     return 'Nama saya '.$name;
 });
